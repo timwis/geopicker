@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>GeoPicker</title>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+    
+        <div class="jumbotron">
+            <h1>GeoPicker</h1>
+            <p>Sometimes the default geocode isn't good enough. This utility allows you to fine tune the latitude/longitude fields after your geocode independent of the address. Try it by typing in an address, then moving the marker after it zooms to it.</p>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-3">
+                <div class="kn-input kn-input-short_text" id="kn-input-field_3"> 
+                    <label for="field_3" class="knack-input-label">
+                        <span class="kn-input-label">Address</span>
+                        <span class="kn-required">*</span>
+                    </label>
+                    <div class="input">
+                        <input id="field_3" class="form-control" name="field_3" type="text" value="1234 Market St">
+                    </div>
+                    <p class="kn-instructions" style="display: none;"></p>
+                </div>
+                
+                <div class="kn-input kn-input-short_text" id="kn-input-field_4"> 
+                    <label for="field_4" class="knack-input-label">
+                        <span class="kn-input-label">Latitude</span>
+                        <span class="kn-required">*</span>
+                    </label>
+                    <div class="input">
+                        <input id="field_4" class="form-control" name="field_4" type="text" value="39.9516592">
+                    </div>
+                    <p class="kn-instructions" style="display: none;"></p>
+                </div>
+                
+                <div class="kn-input kn-input-short_text" id="kn-input-field_5"> 
+                    <label for="field_5" class="knack-input-label">
+                        <span class="kn-input-label">Longitude</span>
+                        <span class="kn-required">*</span>
+                    </label>
+                    <div class="input">
+                        <input id="field_5" class="form-control" name="field_5" type="text" value="-75.1609250">
+                    </div>
+                    <p class="kn-instructions" style="display: none;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnEn106D9TdzSlIssESUmBI_akyuH3ZzM"></script>
+    <script src="main.js"></script>
+</body>
+</html>
